@@ -28,7 +28,8 @@ twitter_username: jpease
 github_username:  jpease
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: thedevslot/WhatATheme
 plugins:
   - jekyll-feed
   - jekyll-sitemap
