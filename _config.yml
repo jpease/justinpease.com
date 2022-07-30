@@ -1,24 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Justin Pease's Blog
+title: Justin Pease
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Sometimes I write stuff.
@@ -26,10 +12,33 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://justinpease.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jpease
 github_username:  jpease
+linkedin_username: justinapease
+  
+# Google Analytics
+google-analytics: UA-163806439-1
+
+# Disqus
+disqus-shortname: 
+  
+# Name of the Author
+author-name: Justin Pease
+# URL for the Image of the Author
+author-image: /assets/images/selfie.jpeg
+# 60 Words About the Author
+author-about: Remote team builder 
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: justinpease.com
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+    
+# Compress
+compress_html:
+  clippings: all
 
 # Build settings
-#theme: minima
-remote_theme: thedevslot/WhatATheme
 plugins:
   - jekyll-feed
   - jekyll-sitemap

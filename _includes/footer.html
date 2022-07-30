@@ -1,0 +1,54 @@
+<footer id="footer">
+    <!--Footer Button-->
+    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
+        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
+    </div>
+    <!--Footer Main Section-->
+    <div class="has-background-grey-darker">
+        <div class="container columns">
+            <!--Name Section-->
+            <div class="column has-text-left-desktop has-text-centered-mobile">
+                <div class="columns">
+                    <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
+                        <figure class="image is-64x64">
+                            <img class="is-rounded" src="{{site.author-image}}">
+                        </figure>
+                    </div>
+                    <div class="column is-marginless">
+                        <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
+                        <div class="content has-text-grey">
+                            <p>{{site.author-about | truncate: 75 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-marginless">
+                <h5 class="has-text-grey-lighter">Get in touch</h5>
+                <div class="content has-text-grey">
+                     <p>{% unless site.twitter_username == %}
+                        <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-grey-light" style="margin-right: 1.5em"><i class="fab fa-twitter"></i></a>
+                        {% endunless %}
+                        {% unless site.linkedin_username ==  %}
+                        <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-grey-light" style="margin-right: 1.5em"><i class="fab fa-linkedin"></i></a>
+                        {% endunless %}
+                        {% unless site.github_username ==  %}
+                        <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-grey-light"><i class="fab fa-github"></i></a>
+                        {% endunless %}
+                    </p>
+                </div>
+            </div>
+
+            <div class="column is-marginless">
+                <h5 class="has-text-grey-lighter">Stay connected</h5>
+                <div class="content has-text-grey">
+                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
+                </div>
+            </div>
+                    
+        </div>
+    </div>
+    <div class="has-background-black has-text-centered has-text-white" id="credits">
+        Copyright <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} <a href="https://justinpease.com">Justin Pease</a>. All rights reserved. 
+        | Powered by <a href="https://github.com/jekyll/jekyll" target="_blank" rel="noopener noreferrer" class="has-text-grey-lighter">Jekyll</a> and <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer" class="has-text-grey-lighter">WhatATheme</a> running on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer" class="has-text-grey-lighter">Github Pages</a>.
+    </div>
+</footer>
