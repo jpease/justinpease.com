@@ -50,7 +50,7 @@ Consciously or not, and for varying reasons, some CTOs encourage this sense of
 dependence. In other cases, people have decided they don't trust the staff in
 the Product/Engineering org. Or, as a final example, the staff in the
 Product/Engineering org feel unsupported to take on such challenges. Any of
-these scenarios indicate underlying culture issues.  
+these scenarios indicate underlying culture issues. (Credit: <a href="#MPS">MPS</a>)  
 &nbsp;  
 
 2. **Business continuity.**  
@@ -90,3 +90,7 @@ sounds a lot like Professional Services, which may very well be billable.
 
 So the next time you hear, "Only so-and-so can fix that", please take a moment
 to reflect. Why is that the case and what can be done to improve the situation?
+
+# Credits and Thanks
+* <a name="MPS" href="https://www.linkedin.com/in/dieswaytoofast/">Mahesh Paolini-Subramanya</a> for 
+    the idea of culture implications.
