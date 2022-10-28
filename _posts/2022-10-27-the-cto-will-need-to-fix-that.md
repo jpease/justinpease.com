@@ -15,9 +15,12 @@ published: true
 **"The CTO will need to fix that."** This phrase should reflexively cause a
 reaction. 
 
-I'm not saying it will always be a red flag if the CTO (or any other person) is
+I'm not saying it will always be a red flag if the CTO* is
 the only person who can fix something, but I think it should at least prompt a
 moment of reflection.
+
+\* *While I'm using the CTO as an example, this really applies in principle to
+any one person.*
 
 # Maybe it's OK
 
