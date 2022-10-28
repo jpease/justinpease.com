@@ -1,7 +1,7 @@
 ---
 title: The CTO will need to fix that
 layout: post
-post-image: /assets/images/old-barn-1.jpeg
+post-image: /assets/images/redfish-lake.jpeg
 description: 
 tags:
 - startups
