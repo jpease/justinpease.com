@@ -40,9 +40,17 @@ What's the big deal? Perhaps the CTO likes handling these types of challenges.
 In fact, that may be why this scenario exists. I bet most of us are less likely
 to hand off a responsibility we really enjoy doing ourself.
 
-So again, what's the big deal? Here's the four angles I'd consider.
+So again, what's the big deal? Here's the five angles I'd consider.
 
-1. **Business continuity.**  
+1. **Culture smell.**  
+Consciously or not, and for varying reasons, some CTOs encourage this sense of
+dependence. In other cases, people have decided they don't trust the staff in
+the Product/Engineering org. Or, as a final example, the staff in the
+Product/Engineering org feel unsupported to take on such challenges. Any of
+these scenarios indicate underlying culture issues.  
+&nbsp;  
+
+2. **Business continuity.**  
 We don't need to consider anything as grim as the bus factor. Let's take the
 cheerier topic of vacation. If any day-to-day operational task requires one
 specific person to handle it, how can that person ever take vacation? Everyone
@@ -51,7 +59,7 @@ deserves a distraction-free vacation. Even the CTO.
     But also, *seriously*, the bus-factor. Unexpected things happen unexpectedly.  
 &nbsp;  
 
-2. **Team morale.**  
+3. **Team morale.**  
 If it wasn't for whatever reason the CTO needs to handle this situation, who
 would normally handle it? You likely hired smart people to solve challenging
 problems. In my experience, when those individuals are unable to do their job
@@ -62,7 +70,7 @@ compounds if it happens with frequency. Even more so if for the same issue.
 around you.  
 &nbsp;  
 
-3. **Product smell.**  
+4. **Product smell.**  
 If some part of the product is so *something* that only the CTO can fix it,
 that should prompt questions like: What is that *something*? Is it insufficient
 documentation? Is that part of the product especially fragile or riddled with
@@ -71,7 +79,7 @@ technical debt?
     If it can be fixed, and it almost certainly can be, then it should be.  
 &nbsp;  
 
-4. **Missed opportunity.**  
+5. **Missed opportunity.**  
 If in fact the domain you are working in is so complex or custom that the above
 identified *something* cannot be addressed in product but instead requires
 highly specialized hands-on work, perhaps it represents an opportunity. This
