@@ -56,7 +56,7 @@ cheerier topic of vacation. If any day-to-day operational task requires one
 specific person to handle it, how can that person ever take vacation? Everyone
 deserves a distraction-free vacation. Even the CTO.
 
-    But also, *seriously*, the bus-factor. Unexpected things happen unexpectedly.  
+    But also, *seriously*, the bus factor. Unexpected things happen unexpectedly.  
 &nbsp;  
 
 3. **Team morale.**  
