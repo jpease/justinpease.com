@@ -37,7 +37,7 @@ There are other scenarios where you need the CTO to do something that is
 specific to the role of CTO. For example, Sales may need the CTO to meet with
 a key prospect to close a deal. That's not what we're talking about here.
 
-# It's probably not OK
+# But it's probably not OK
 
 What's the big deal? Perhaps the CTO likes handling these types of challenges.
 In fact, that may be why this scenario exists. I bet most of us are less likely
