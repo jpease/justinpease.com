@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 'Justin Pease: Simple ideas. Sometimes obvious, often overlooked.'
+title: Justin Pease
 email: justin@justinpease.com
 description: >- # this means to ignore newlines until "baseurl:"
   Sometimes I write stuff.
@@ -25,7 +25,7 @@ author-name: Justin Pease
 # URL for the Image of the Author
 author-image: /assets/images/selfie.jpeg
 # 60 Words About the Author
-author-about: Remote team builder 
+author-about: People-first leadership 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: justinpease.com
 
