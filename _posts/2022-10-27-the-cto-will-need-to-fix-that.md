@@ -50,7 +50,7 @@ Consciously or not, and for varying reasons, some CTOs encourage this sense of
 dependence. In other cases, people have decided they don't trust the staff in
 the Product/Engineering org. Or, as a final example, the staff in the
 Product/Engineering org feel unsupported to take on such challenges. Any of
-these scenarios indicate underlying culture issues. (Credit: <a href="#MPS">MPS</a>)  
+these scenarios indicate underlying culture issues. [Credit: <a href="#MPS">MPS</a>]  
 &nbsp;  
 
 2. **Business continuity.**  
