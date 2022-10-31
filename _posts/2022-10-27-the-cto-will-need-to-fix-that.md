@@ -46,13 +46,13 @@ to hand off a responsibility we really enjoy doing ourself.
 So again, what's the big deal? Here's the five angles I'd consider.
 
 1. **Culture smell.**  
-Consciously or not, and for varying reasons, some CTOs encourage this sense of
-dependence. In other cases, people have decided they don't trust the staff in
-the Product/Engineering org. Or, as a final example, the staff in the
-Product/Engineering org feel unsupported to take on such challenges. Any of
-these scenarios indicate underlying culture issues.
+Consciously or not, and for varying reasons (e.g. ego, insecurity), some CTOs
+encourage this sense of dependence. In other cases, people have decided they
+don't trust the staff in the Product/Engineering org. Or, as a final example,
+the staff in the Product/Engineering org feel unsupported to take on such
+challenges. Any of these scenarios indicate underlying culture issues.
 
-    [*Credit:* <a href="#MPS">MPS</a>]  
+    [*Credits* <a href="#MPS">MPS</a> & <a href="#CJ">CJ</a>]  
 &nbsp;  
 
 2. **Business continuity.**  
@@ -94,5 +94,6 @@ So the next time you hear, "Only so-and-so can fix that", please take a moment
 to reflect. Why is that the case and what can be done to improve the situation?
 
 # Credits and Thanks
-* <a name="MPS" href="https://www.linkedin.com/in/dieswaytoofast/">Mahesh Paolini-Subramanya</a> for 
-    the idea of culture implications.
+* <a name="MPS" href="https://www.linkedin.com/in/dieswaytoofast/">Mahesh Paolini-Subramanya</a> - For ideas on culture implications
+* <a name="CJ" href="https://www.linkedin.com/in/cuyler/">Cuyler Jones</a> - For ideas on culture implications
+
