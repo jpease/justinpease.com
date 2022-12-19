@@ -48,8 +48,8 @@ not, the picture it paints and the feeling it conveys is clear:
 
 **Cross this line and there will be seriously bad consequences.**
 
-Like the above picture of a dead tree in a barren West Texas landscape, deadline
-ominously portends difficult times ahead. It made me ask myself:
+Like the above picture of a dead tree in a barren West Texas landscape,
+"deadline" ominously portends difficult times ahead. It made me ask myself:
 
 * Is that the message I'm trying to convey?
 * Is the timeline truly so rigid that no adjustments can be considered?
