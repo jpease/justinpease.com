@@ -13,7 +13,7 @@ published: true
 
 **This post is part of [The Words We Use](/2022/12/18/the-words-we-use) series.**
 
-During an interview this morning I was asked about how I approach deadlines. My 
+During an interview this morning I was asked about how I approach deadlines. My
 answer began with something like: 
 
 > "I'm not sure of deadline's etymology, but it doesn't sound friendly. It would
