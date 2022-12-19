@@ -1,7 +1,7 @@
 ---
 title: The Words We Use - Deadline
 layout: post
-post-image: /assets/images/snowy-daffodils.jpeg
+post-image: /assets/images/barren-tree-1.jpeg
 description: 
 tags:
 - the words we use
@@ -14,7 +14,7 @@ published: true
 **This post is part of [The Words We Use](/2022/12/18/the-words-we-use) series.**
 
 During an interview this morning I was asked about how I approach deadlines. My
-answer began with something like: 
+answer began with something like:
 
 > "I'm not sure of deadline's etymology, but it doesn't sound friendly. It would
 seem to imply that if the line is crossed, death will result. Or at the very
@@ -41,14 +41,15 @@ lowest depth of subjugation."
 > —William Williston Heartsill, Diary of William Williston Heartsill (entry Mar. 1863)
 
 To me, a direct comparison between prisoners at risk of death and modern-day
-workers' at-will employment seems inappropriate. Perhaps a bit overdramatic,
-even for me. Nevertheless, in the spirit of this series, I do wonder whether the
+workers' at-will employment seems inappropriate. A bit overdramatic, even for
+me. Nevertheless, in the spirit of this series, I do wonder whether the
 negative overtones carry through. Whether familiar with the word's history or
-not, the picture it paints and the feeling it conveys is clear: 
+not, the picture it paints and the feeling it conveys is clear:
 
 **Cross this line and there will be seriously bad consequences.**
 
-It made me ask myself:
+Like the above picture of a dead tree in a barren West Texas landscape, deadline
+ominously portends difficult times ahead. It made me ask myself:
 
 * Is that the message I'm trying to convey?
 * Is the timeline truly so rigid that no adjustments can be considered?
