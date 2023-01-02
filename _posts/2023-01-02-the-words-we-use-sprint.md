@@ -37,17 +37,13 @@ an extended period of time. **Only with rest comes growth.** But if we expect
 our teams to constantly sprint towards [deadlines](/2022/12/19/the-words-we-use-deadline),
 is it any wonder that people experience burn out?
 
-This makes me ask:
+If an unsustainable pace is not our intention, are there alternatives that add
+clarity? I believe there are.
 
-* If that's not our expectation, why use a word that indicates otherwise?
-* Is short-term speed or a long-term sustainable pace more important to the
-team and the company's success?
+* When talking about a "sprint", in a generalized discussion of a methodology, 
+nothing is lost by using "work period."
+* When talking about a team's specific implementation of a methodology, we can
+say exactly what we mean. For example, "during the next sprint" might become
+"during the next two weeks."
 
-When talking about a "sprint", in a generalized discussion of a methodology, is
-anything lost by dropping the jargon and just saying "work period"? I don't
-think so.
-
-When talking about a team's specific implementation of a methodology, why not
-say exactly what you mean? For example, "during the next sprint" might become
-"during the next two weeks." Clarity of communication is improved for all
-audiences.
+By dropping the jargon, clarity of communication is improved for all audiences.
