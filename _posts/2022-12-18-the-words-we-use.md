@@ -27,3 +27,4 @@ This series will attempt to capture examples of the above.
 # Series Posts
 
 * [Deadline](/2022/12/19/the-words-we-use-deadline)
+* [Sprint](/2023/01/02/the-words-we-use-sprint)
