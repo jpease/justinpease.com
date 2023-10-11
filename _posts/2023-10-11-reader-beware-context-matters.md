@@ -1,7 +1,9 @@
 ---
-layout: post
 title:  "Reader Beware: Context Matters"
-categories: blog
+layout: post
+post-image: /assets/images/fall-scene-1.jpeg
+tags:
+- warnings
 author: 
 - Justin Pease
 published: true
@@ -20,7 +22,7 @@ from.
 
 Here are a few details that color my perception.
 
-# Company Characteristics
+# Company characteristics
 
 ## Number of staff
 
@@ -35,9 +37,9 @@ three hundred. Prior to this I spent seven years as a sole proprietor.
 Some businesses were started yesterday and others, amazingly, are over a
 thousand years old.
 
-I've worked at companies that identified as "startups". These ranged from those
-founded less than two years prior to my joining to those that had already been
-in business nearly a decade.
+I've specifically worked at companies that identified as "startups". These
+ranged from those founded less than two years prior to my joining to those that
+had already been in business nearly a decade.
 
 ## On-site vs remote
 
