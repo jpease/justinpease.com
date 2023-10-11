@@ -43,7 +43,9 @@ had already been in business nearly a decade.
 
 ## On-site vs remote
 
-I've worked remotely since 2008.
+I've worked remotely since 2008. Prior to that, as a sole proprietor, I worked
+for over a year from a
+[small mountain village in Panama](https://en.wikipedia.org/wiki/Cerro_Punta,_Chiriquí).
 
 ## Industry
 
