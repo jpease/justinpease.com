@@ -34,8 +34,8 @@ three hundred. Prior to this I spent seven years as a sole proprietor.
 
 ## Stage
 
-Some businesses were started yesterday and others, amazingly, are over a
-thousand years old.
+Some businesses were started yesterday and others, amazingly, are [over a
+thousand years old](https://en.wikipedia.org/wiki/Kongō_Gumi).
 
 I've specifically worked at companies that identified as "startups". These
 ranged from those founded less than two years prior to my joining to those that
@@ -49,6 +49,8 @@ I've worked remotely since 2008.
 
 I've worked at technology companies. The majority of these were B2B. One was
 B2C. Most of these focused on providing software or sevices to software
-engineers, such as: distributed database, in-memory data grid, Ruby on Rails
-PaaS, log storage and analysis, etc. I have also worked at two FinTech
-companies, one directly servicing end consumers and one that provided BaaS.
+engineers, such as: [distributed database](https://riak.com),
+[in-memory data grid](https://hazelcast.com),
+[Ruby on Rails PaaS](https://www.engineyard.com), log storage and analysis,
+etc. I have also worked at two FinTech companies, one directly servicing end
+consumers and one that provided BaaS.
