@@ -53,7 +53,7 @@ that, as a sole proprietor, I worked for over a year from a
 
 ### Industry
 
-**Range of possibility:** To expansive to attempt to list.
+**Range of possibility:** Too expansive to attempt to list.
 
 **My experience:** I've worked at technology companies. The majority of these
 were B2B. One was B2C. Most of these focused on providing software or services
