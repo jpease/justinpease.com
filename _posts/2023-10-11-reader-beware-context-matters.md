@@ -9,10 +9,11 @@ author:
 published: true
 ---
 
-Are trees green or are they orange? Is the sky blue or is it gray?
+Are trees green? Is the sky blue? Yes, of course.
 
-Looking out my window I see trees with orange leaves against a gray sky. Six
-months from now, even sitting in the same seat, things will look very different.
+And yet, looking out my window I see trees with orange leaves against a gray
+sky. Six months from now, even sitting in the same seat, things will look very
+different.
 
 To make sense of the information around us we must assess context. My writing
 is no different. I'll do my best to be honest and present information that I
