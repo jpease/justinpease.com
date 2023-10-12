@@ -9,11 +9,10 @@ author:
 published: true
 ---
 
-Are trees green? Is the sky blue? Yes, of course.
+Are trees green? Is the sky blue? Yes, of course. Everyone knows that.
 
-And yet, looking out my window I see trees with orange leaves against a gray
-sky. Six months from now, even sitting in the same seat, things will look very
-different.
+However, looking out my window, what do I see? Trees with red and orange leaves
+and a gray sky.
 
 To make sense of the information around us we must assess context. My writing
 is no different. I'll do my best to be honest and present information that I
@@ -23,36 +22,42 @@ from.
 
 Here are a few details that color my perception.
 
-# Company characteristics
+## Company characteristics
 
-## Number of staff
+### Number of staff
 
-A company can range from a sole proprietor to millions of employees.
+**Range of possibility:** Sole proprietors to millions of employees.
 
-My experience has been working at organizations of just under 50 people to just
-over 1,000 people. I've led single teams of three up to departments of over
-three hundred. Prior to this I spent seven years as a sole proprietor.
+**My experience:** Organizations of just under 50 to just over 1,000 people. I've
+led single teams of three up to departments of over three hundred. Prior to
+this I spent seven years as a sole proprietor.
 
-## Stage
+### Stage
 
-Some businesses were started yesterday and others, amazingly, are [over a
-thousand years old](https://en.wikipedia.org/wiki/Kongō_Gumi).
+**Range of possibility:** Some businesses were started yesterday and others,
+amazingly, are [over a thousand years old](https://en.wikipedia.org/wiki/Kongō_Gumi).
 
-I've specifically worked at companies that identified as "startups". These
-ranged from those founded less than two years prior to my joining to those that
-had already been in business nearly a decade.
+**My experience:** I've specifically worked at companies that identified as
+"startups". Some were founded less than two years prior to my joining, while
+others had been in business nearly a decade.
 
-## On-site vs remote
+### On-site vs remote
 
-I've worked remotely since 2008. Prior to that, as a sole proprietor, I worked
-for over a year from a
+**Range of possibility:** On-site, hybrid, remote.
+
+**My experience:** I've worked at companies that did all three and have
+personally worked both on-site and remotely. However, the bulk of my
+professional experience has been remote, exclusively so since 2008. Prior to
+that, as a sole proprietor, I worked for over a year from a
 [small mountain village in Panama](https://en.wikipedia.org/wiki/Cerro_Punta,_Chiriquí).
 
-## Industry
+### Industry
 
-I've worked at technology companies. The majority of these were B2B. One was
-B2C. Most of these focused on providing software or sevices to software
-engineers, such as: [distributed database](https://riak.com),
+**Range of possibility:** To expansive to attempt to list.
+
+**My experience:** I've worked at technology companies. The majority of these
+were B2B. One was B2C. Most of these focused on providing software or services
+to software engineers, such as: [distributed database](https://riak.com),
 [in-memory data grid](https://hazelcast.com),
 [Ruby on Rails PaaS](https://www.engineyard.com), log storage and analysis,
 etc. I have also worked at two FinTech companies, one directly servicing end
