@@ -11,8 +11,8 @@ published: true
 
 Are trees green? Is the sky blue? Yes, of course. Everyone knows that.
 
-However, looking out my window, what do I see? Trees with red and orange leaves
-and a gray sky.
+However, looking out my window, what do I see? Trees that are red and orange
+along with a sky that is gray.
 
 To make sense of the information around us we must assess context. My writing
 is no different. I'll do my best to be honest and present information that I
