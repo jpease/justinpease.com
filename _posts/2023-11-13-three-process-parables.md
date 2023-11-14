@@ -44,7 +44,8 @@ by guiding them to the desired outcomes.
 Next, picture some friends setting up a poker game. Before shuffling, the dealer
 flips through the cards to make sure they are all face down.
 
-Why? It's just how the game works. You can't see each others cards.
+Why? It's just how the game works. As illustrated in the photo above, it doesn't
+matter how good your hand is, if you insist on playing faces out.
 
 Some software engineering processes are like that too. For example, if you want
 to play the SOC 2 Type 2 compliance game, you're going to need a change
