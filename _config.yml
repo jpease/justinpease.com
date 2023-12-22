@@ -13,19 +13,19 @@ url: "https://justinpease.com" # the base hostname & protocol for your site, e.g
 twitter_username: jpease
 github_username:  jpease
 linkedin_username: justinapease
-  
+
 # Google Analytics
 google-analytics: G-HMKCNEPC19
 
 # Disqus
-disqus-shortname: 
-  
+disqus-shortname:
+
 # Name of the Author
 author-name: Justin Pease
 # URL for the Image of the Author
 author-image: /assets/images/selfie.jpeg
 # 60 Words About the Author
-author-about: People-first leadership 
+author-about: People-first leadership
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: justinpease.com
 
@@ -33,7 +33,7 @@ author-url: justinpease.com
 sass:
   sass_dir: _sass
   style: compressed
-    
+
 # Compress
 compress_html:
   clippings: all
@@ -53,13 +53,13 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 # exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# - .sass-cache/
+# - .jekyll-cache/
+# - gemfiles/
+# - Gemfile
+# - Gemfile.lock
+# - node_modules/
+# - vendor/bundle/
+# - vendor/cache/
+# - vendor/gems/
+# - vendor/ruby/
