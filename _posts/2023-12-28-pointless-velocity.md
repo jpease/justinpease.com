@@ -3,7 +3,9 @@ title:  "Pointless Velocity"
 layout: post
 post-image: /assets/images/velocity-fox.jpeg
 tags:
-- process
+- agile
+- the words we use
+- engineering management
 author:
 - Justin Pease
 published: true
