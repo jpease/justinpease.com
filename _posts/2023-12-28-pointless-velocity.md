@@ -137,7 +137,7 @@ the cycle. They do not work any overtime.
 
 ### Scenario 1: Perfect Estimates
 
-This seems improbable, but let's roll with it. The team completes exactly the 80
+This seems improbable, but let's roll with it. The team completes the exact 80
 points of work scheduled.
 
 Now tell me, how does this team increase velocity? Given that story points are
@@ -192,12 +192,13 @@ only thing that changed was the accuracy of the estimates.
 ## The root problem
 
 This is an example where the choice of words has done a great disservice. I'm
-not blaming anyone. I'm certain there was no malintent. The outcome is the same.
+not blaming anyone. I'm certain there was no malintent. Regardless, the outcome
+is the same.
 
 So let's drop the jargon and call things as they are. The formula for what we've
 been talking about is:
 
-> v = estimated time / actual time
+> estimated time / actual time
 
 Looking at that formula, what does it describe? Accuracy of estimation. Does the
 label matter? Yes! If we called it what it is, estimation accuracy, imagine
@@ -205,24 +206,25 @@ what would immediately become plain:
 
 * Has no direct correlation to value creation, efficiency, or productivity
 * 10% under is just as wrong as 10% over, although neither may matter
-* Improvement has fixed upper limits of 100%
+* Improvement has a fixed upper limit of 100%
 * Unless estimation accuracy is a top business priority, focus may be better
 spent elsewhere
 
 ## But... we use velocity to measure output
 
-That's a shame. Because it's not what your numbers mean.
+That's a shame. Because if you're using story points to do so, it's not what
+your numbers mean.
 
 ## One last ironic layer of nonsense
 
-I'll leave you with a parting thought that I find amusing. You'll recall from
-earlier in the article, story points were introduced to do what? To avoid
-focusing on deviations between work estimates and actual time spent.
+I find this last piece painfully amusing. You'll recall from earlier in the
+article, story points were introduced to do what? To avoid focus on deviations
+between work estimates and actual time spent.
 
 And what have we done?
 
 **Under the name of Velocity, we've memorialized and spotlighted this very
-thing.** But we couldn't just stop there, could we? We've also managed to make
-it far more confusing along the way.
+thing.** But we couldn't just stop there, could we? Oh no. We've also managed to
+make it far more confusing along the way.
 
 Bravo! Bravo.
