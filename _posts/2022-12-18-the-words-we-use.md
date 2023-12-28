@@ -2,11 +2,11 @@
 title: The Words We Use - Series Introduction
 layout: post
 post-image: /assets/images/old-barn-1.jpeg
-description: 
+description:
 tags:
 - the words we use
 - project management
-author: 
+author:
 - Justin Pease
 published: true
 ---
@@ -28,3 +28,4 @@ This series will attempt to capture examples of the above.
 
 * [Deadline](/2022/12/19/the-words-we-use-deadline)
 * [Sprint](/2023/01/02/the-words-we-use-sprint)
+* [Velocity](/2023/12/28/pointless-velocity.md)
