@@ -13,7 +13,7 @@ published: true
 
 Languages are dynamic. They grow and change shape. Existing words are repurposed
 to describe new ideas. Sometimes it's helpful. Often it's harmless. But in some
-cases, like today's example, it results in **layers of absolute and utter 
+cases, like today's example, it results in **layers of absolute and utter
 nonsense that compound gloriously**.
 
 ## What is velocity?
@@ -77,7 +77,8 @@ One team may adopt the Fibonacci sequence. Another, in an attempt to emphasize
 the inexactness of the estimates, may use round numbers to lower the implied
 precision of that sequence (e.g. 20 vs 21). Still others will avoid numbers
 altogether and use T-Shirt sizes, although they are often later translated back
-to numbers. The purpose of all of this? To pretend we're not talking about time.
+to... you guessed it!... numbers. The purpose of all of this? To pretend we're
+not talking about time.
 
 Lest we fall prey to our own tricks of misdirection, if points are being used to
 fit work into a defined time period, all of these schemes reduce down to a
