@@ -219,7 +219,7 @@ focusing on deviations between work estimates and actual time spent.
 And what have we done?
 
 **Under the name of Velocity, we've memorialized and spotlighted this very
-thing.** But we couldn't stop there. We've also managed to make it far more
-confusing along the way.
+thing.** But we couldn't just stop there, could we? We've also managed to make
+it far more confusing along the way.
 
 Bravo! Bravo.
