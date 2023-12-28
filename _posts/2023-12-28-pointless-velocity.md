@@ -227,4 +227,4 @@ And what have we done?
 thing.** But we couldn't just stop there, could we? Oh no. We've also managed to
 make it far more confusing along the way.
 
-Bravo! Bravo.
+Bravo! &#128079; Bravo.
