@@ -39,9 +39,8 @@ the commonly accepted formula for velocity is:
 
 > v = story points completed &divide; work cycle
 
-Therefore, a team that completes 80 story points in a 2 week sprint could be
-said to have a velocity of 80 story points/sprint, or just simplified to 80
-points.
+Therefore, a team that completes 80 story points in a sprint could be said to
+have a velocity of 80 story points/sprint, or commonly simplified to 80 points.
 
 Does this formula make sense? To answer that, we first need to define our unit
 of measurement. What exactly is a story point?
@@ -76,9 +75,9 @@ As time has passed, this verbal sleight of hand has grown increasingly complex.
 One team may adopt the Fibonacci sequence. Another, in an attempt to emphasize
 the inexactness of the estimates, may use round numbers to lower the implied
 precision of that sequence (e.g. 20 vs 21). Still others will avoid numbers
-altogether and use T-Shirt sizes, although they are often later translated back
-to... you guessed it!... numbers. The purpose of all of this? To pretend we're
-not talking about time.
+altogether and use T-shirt sizes, although they are often later translated back
+to... you guessed it!... numbers. The purpose of all this? To pretend we're not
+talking about time.
 
 Lest we fall prey to our own tricks of misdirection, if points are being used to
 fit work into a defined time period, all of these schemes reduce down to a
@@ -100,12 +99,12 @@ general case&mdash;must be understood as:
 
 > v = \<*undefined term*\> &divide; work cycle
 
-That, dear reader, is utter nonsense. **But wait, it gets worse!** After all,
+That, dear reader, is utter nonsense. **But wait, there's more!** After all,
 you were promised this nonsense would come in gloriously compounding layers.
 
 ## The need for speed
 
-Any guess what happens when management hears about velocity?
+Can you guess what happens when management hears about velocity?
 
 > "You have a way to measure engineering speed? Great, we need to go faster!"
 
