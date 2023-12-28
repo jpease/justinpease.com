@@ -21,32 +21,33 @@ The scientific definition of velocity is precise and useful:
 > v = the change of distance in a given direction &divide; the change in time
 
 Thus, a car that moves 60 miles east between 3:00 and 4:00 pm has a velocity of
-60 mph east. Clear and simple.
+60 mph east.
 
-Alternatively, in casual conversation, many use velocity interchangeably with
-speed when referring to any rate of change. This too makes sense as a formula:
+Alternatively, in casual conversation, many use velocity and speed
+interchangeably when referring to any rate of change. This too makes sense as a
+formula:
 
 > v = measurement of change &divide; the change in time
 
 ## Velocity, according to SDLC methodologies
 
 If you're following Scrum, or another software development methodology with
-fixed length work cycles (i.e. [Sprints](https://justinpease.com/2023/01/02/the-words-we-use-sprint.html)), the commonly accepted formula for
-velocity is:
+fixed length work cycles (i.e. [Sprints](https://justinpease.com/2023/01/02/the-words-we-use-sprint.html)),
+the commonly accepted formula for velocity is:
 
 > v = story points completed &divide; work cycle
 
-Therefore, a team that completed 80 story points in a 2 week sprint could be
+Therefore, a team that completes 80 story points in a 2 week sprint could be
 said to have a velocity of 80 story points/sprint, or just simplified to 80
 points.
 
 Does this formula make sense? To answer that, we first need to define our unit
-of measurement, a story point.
+of measurement. What exactly is a story point?
 
 ## A measurement of time by any other name
 
-Ron Jeffries, the likely inventor of the story point, explains they were [first used to
-estimate time](https://ronjeffries.com/articles/019-01ff/story-points/Index.html).
+Ron Jeffries, likely the inventor of the story point, explains they were [first
+used to estimate time](https://ronjeffries.com/articles/019-01ff/story-points/Index.html).
 However, a recent [informal poll on LinkedIn](https://www.linkedin.com/posts/justinapease_i-have-an-idea-for-an-article-id-like-to-activity-7137539997569601536-h6Kb)
 shows story points are also used to factor effort, complexity, risk, and
 uncertainty into work estimates.
@@ -57,28 +58,28 @@ If you use story points to figure out how much work can fit in a fixed time
 period&mdash;**story points are always an estimation of time**. Call it what you
 want, but know that time is the subject matter.
 
-## But we don't talk about time
+## But we don't want to talk about time
 
 In the article linked above, Ron Jeffries explains the switch from Days to
 Points was an attempt to abstract estimations away from time. Why? The rationale
 is intriguing. When using clear and direct language, guess what happened? The
 stakeholders understood that time estimates were time estimates.
 
-So what was the problem? With this understanding, stakeholders tended to focus
+So what was the problem? With this understanding, stakeholders were focusing
 on disparities between estimated time and actual time. It's not hard to imagine
 that Mr. Jeffries and team found this to be an unhelpful distraction that did
 not contribute to the performance of an engineering team. And thus, points.
 
 As time has passed, this verbal sleight of hand has grown increasingly complex.
 One team may adopt the Fibonacci sequence. Another, in an attempt to emphasize
-the inexactness of the estimates, may lower the precision of that sequence (e.g.
-20 vs 21). Still others will avoid numbers altogether and use T-Shirt sizes,
-although they are often later translated to numbers. The purpose of all of this?
-To pretend we're not talking about time.
+the inexactness of the estimates, may use round numbers to lower the implied
+precision of that sequence (e.g. 20 vs 21). Still others will avoid numbers
+altogether and use T-Shirt sizes, although they are often later translated back
+to numbers. The purpose of all of this? To pretend we're not talking about time.
 
-Lest we fall prey to our own tricks, if points are being used to fit work into a
-defined time period, all of these schemes must reduce down to a measurement of
-time. Yes, I made this point earlier, but it bears repeating.
+Lest we fall prey to our own tricks of misdirection, if points are being used to
+fit work into a defined time period, all of these schemes reduce down to a
+measurement of time. Yes, this point was made earlier, but it bears repeating.
 
 ## And then there was velocity
 
@@ -91,8 +92,8 @@ So back to our question, does this formula for velocity make any sense?
 
 > v = story points completed &divide; work cycle
 
-With no standard unit of measurement for story points, velocity&mdash;in the general
-case&mdash;must be understood as:
+With no standard unit of measurement for story points, velocity&mdash;in the
+general case&mdash;must be understood as:
 
 > v = \<*undefined term*\> &divide; work cycle
 
@@ -101,7 +102,7 @@ you were promised this nonsense would come in gloriously compounding layers.
 
 ## The need for speed
 
-Any guesses what happens when management hears about velocity?
+Any guess what happens when management hears about velocity?
 
 > "You have a way to measure engineering speed? Great, we need to go faster!"
 
@@ -187,7 +188,7 @@ only thing that changed was the accuracy of the estimates.
 
 ## The root problem
 
-This is an example where the choice of words have done a great disservice. I'm
+This is an example where the choice of words has done a great disservice. I'm
 not blaming anyone. I'm certain there was no malintent. The outcome is the same.
 
 So let's drop the jargon and call things as they are. The formula for what we've
@@ -203,7 +204,11 @@ what would immediately become plain:
 * 10% under is just as wrong as 10% over, although neither may matter
 * Improvement has fixed upper limits of 100%
 * Unless estimation accuracy is a top business priority, focus may be better
-spend elsewhere
+spent elsewhere
+
+## But... we use velocity to measure output
+
+That's a shame. Because it's not what your numbers mean.
 
 ## One last ironic layer of nonsense
 
