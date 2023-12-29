@@ -140,7 +140,7 @@ This seems improbable, but let's roll with it. The team completes the exact 80
 points of work scheduled.
 
 Now tell me, how does this team increase velocity? Given that story points are
-an estimation of time, not output, there is only way for a team with perfect
+an estimation of time, not output, there is only one way for a team with perfect
 estimates to increase velocity:
 
 1. Work more hours
@@ -197,7 +197,7 @@ Regardless, the outcome is the same.
 So let's drop the jargon and call things as they are. The formula for what we've
 been talking about is:
 
-> estimated time / actual time
+> estimated time &divide; actual time
 
 Looking at that formula, what does it describe? Accuracy of estimation. Does the
 label matter? Yes! If we called it what it is, estimation accuracy, imagine
@@ -214,7 +214,7 @@ spent elsewhere
 That's a shame. Because if you're using story points to do so, it's not what
 your numbers mean.
 
-## One last ironic layer of nonsense
+## One last gloriously ironic layer of nonsense
 
 I find this last piece painfully amusing. You'll recall from earlier in the
 article, story points were introduced to do what? To avoid focus on deviations
@@ -223,7 +223,7 @@ between work estimates and actual time spent.
 And what have we done?
 
 **Under the name of Velocity, we've memorialized and spotlighted this very
-thing.** But we couldn't just stop there, could we? Oh no. We've also managed to
-make it far more confusing along the way.
+thing as a core metric.** But we couldn't just stop there, could we? Oh no. 
+We've also managed to make it far more confusing along the way.
 
 Bravo! &#128079; Bravo.
