@@ -4,7 +4,7 @@ layout: post
 post-image: /assets/images/poker-1.jpeg
 tags:
 - process
-author: 
+author:
 - Justin Pease
 published: true
 ---

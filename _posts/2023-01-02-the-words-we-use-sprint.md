@@ -2,11 +2,11 @@
 title: The Words We Use - Sprint
 layout: post
 post-image: /assets/images/boise-trail-1.jpeg
-description: 
+description:
 tags:
 - the words we use
 - project management
-author: 
+author:
 - Justin Pease
 published: true
 ---
@@ -40,7 +40,7 @@ is it any wonder that people experience burn out?
 If an unsustainable pace is not our intention, are there alternatives that add
 clarity? I believe there are.
 
-* When talking about a "sprint", in a generalized discussion of a methodology, 
+* When talking about a "sprint", in a generalized discussion of a methodology,
 nothing is lost by using "work period."
 * When talking about a team's specific implementation of a methodology, we can
 say exactly what we mean. For example, "during the next sprint" might become

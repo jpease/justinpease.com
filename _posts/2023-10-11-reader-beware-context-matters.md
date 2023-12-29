@@ -4,7 +4,7 @@ layout: post
 post-image: /assets/images/fall-scene-1.jpeg
 tags:
 - warnings
-author: 
+author:
 - Justin Pease
 published: true
 ---

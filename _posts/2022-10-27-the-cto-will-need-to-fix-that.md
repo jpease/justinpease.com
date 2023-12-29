@@ -2,18 +2,18 @@
 title: The CTO will need to fix that
 layout: post
 post-image: /assets/images/redfish-lake.jpeg
-description: 
+description:
 tags:
 - startups
 - scaling
 - management
-author: 
+author:
 - Justin Pease
 published: true
 ---
 
 **"The CTO will need to fix that."** This phrase should reflexively cause a
-reaction. 
+reaction.
 
 I'm not saying it will always be a red flag if the CTO* is
 the only person who can fix something, but I think it should at least prompt a
@@ -96,4 +96,3 @@ to reflect. Why is that the case and what can be done to improve the situation?
 # Credits and Thanks
 * <a name="MPS" href="https://www.linkedin.com/in/dieswaytoofast/">Mahesh Paolini-Subramanya</a> - For ideas on culture implications
 * <a name="CJ" href="https://www.linkedin.com/in/cuyler/">Cuyler Jones</a> - For ideas on culture implications
-

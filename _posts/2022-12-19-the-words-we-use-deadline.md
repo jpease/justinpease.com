@@ -2,11 +2,11 @@
 title: The Words We Use - Deadline
 layout: post
 post-image: /assets/images/barren-tree-1.jpeg
-description: 
+description:
 tags:
 - the words we use
 - project management
-author: 
+author:
 - Justin Pease
 published: true
 ---
@@ -24,7 +24,7 @@ matter of life or death."
 
 Curiosity prompted me to later seek out the history of the word.
 
-According to various sources, including 
+According to various sources, including
 [Merriam-Webster](https://www.merriam-webster.com/words-at-play/your-deadline-wont-kill-you),
 the word starts to appear in written records during the 1860s, specifically in
 connection with the Civil War.

@@ -2,11 +2,11 @@
 title: How to Say No
 layout: post
 post-image: /assets/images/snowy-daffodils.jpeg
-description: 
+description:
 tags:
 - communication
 - tips
-author: 
+author:
 - Justin Pease
 published: true
 ---
@@ -16,7 +16,7 @@ published: true
 **&#9888; Proceed with caution. &#9888;**
 
 Saying "Yes" to everything is a great way to let others down while *also*
-burning yourself out. &#128077; 
+burning yourself out. &#128077;
 
 On the other hand, simply saying "No" a lot doesn't solve your problems either.
 It may make more. At one company early in my management career, my Director
