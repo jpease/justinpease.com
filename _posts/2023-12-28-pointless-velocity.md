@@ -190,9 +190,9 @@ only thing that changed was the accuracy of the estimates.
 
 ## The root problem
 
-This is an example where the choice of words has done a great disservice. I'm
-not blaming anyone. I'm certain there was no malintent. Regardless, the outcome
-is the same.
+This is an example where the choice of wording, specifically velocity, has done
+a great disservice. I'm not blaming anyone. I mean to imply no malintent.
+Regardless, the outcome is the same.
 
 So let's drop the jargon and call things as they are. The formula for what we've
 been talking about is:
