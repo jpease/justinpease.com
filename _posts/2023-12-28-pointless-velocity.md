@@ -158,7 +158,7 @@ What's morbidly interesting is that if their prior cycle's estimate was more
 accurate, then **this estimation error will appear as "increased velocity".**
 Good job, team! &#128077;
 
-But that's just one cycle. How can the overestimating team continue to increase
+But that's a single cycle. How can the overestimating team continue to increase
 velocity? They have an additional option over Scenario 1:
 
 1. Work more hours, or
@@ -204,7 +204,7 @@ label matter? Yes! If we called it what it is, estimation accuracy, imagine
 what would immediately become plain:
 
 * Has no direct correlation to value creation, efficiency, or productivity
-* 10% under is just as wrong as 10% over, although neither may matter
+* 10% under is as wrong as 10% over, although neither may matter
 * Improvement has a fixed upper limit of 100%
 * Unless estimation accuracy is a top business priority, focus may be better
 spent elsewhere
@@ -217,13 +217,14 @@ your numbers mean.
 ## One last gloriously ironic layer of nonsense
 
 This last piece is painfully amusing. You'll recall from earlier in the article,
-story points were introduced to do what? To avoid focus on deviations between
-work estimates and actual time spent.
+story points were introduced to do what? To counteract a tendency to focus on
+variations between work estimates and actual time spent.
 
 And what have we done?
 
 **Under the name of Velocity, we've memorialized and spotlighted this very
-thing as a core metric.** But we couldn't just stop there, could we? Oh no.
-We've also managed to make it far more confusing along the way.
+thing as a core metric.** But we couldn't stop there, could we? Oh no. Through
+mislabeling and misdirection we also managed to make it far more confusing along
+the way.
 
 Bravo! Bravo. &#128079;
