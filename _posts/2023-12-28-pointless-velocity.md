@@ -226,4 +226,4 @@ And what have we done?
 thing as a core metric.** But we couldn't just stop there, could we? Oh no. 
 We've also managed to make it far more confusing along the way.
 
-Bravo! &#128079; Bravo.
+&#128079; Bravo! Bravo. &#128079;
