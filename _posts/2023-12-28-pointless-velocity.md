@@ -62,14 +62,16 @@ want, but know that time is the subject matter.
 ## But we don't want to talk about time
 
 In the article linked above, Ron Jeffries explains the switch from Days to
-Points was an attempt to abstract estimations away from time. Why? The rationale
-is intriguing. When using clear and direct language, guess what happened? The
-stakeholders understood that time estimates were time estimates.
+Points was intended to abstract estimations away from time. Why? Although Days
+accurately communicated that these were time estimates, the difference between
+the team's definition of an Ideal Day and a calendar day was lost in
+translation.
 
-So what was the problem? With this understanding, stakeholders were focusing
-on disparities between estimated time and actual time. It's not hard to imagine
-that Mr. Jeffries and team found this to be an unhelpful distraction that did
-not contribute to the performance of an engineering team. And thus, points.
+With what result? This misunderstanding exaggerated disparities between
+estimated time and actual time, prompting stakeholders to focus on that. It's
+not hard to imagine that Mr. Jeffries and team found this to be an unhelpful
+distraction that did not contribute to the performance of an engineering team.
+And thus, points.
 
 As time has passed, this verbal sleight of hand has grown increasingly complex.
 One team may adopt the Fibonacci sequence. Another, in an attempt to emphasize
