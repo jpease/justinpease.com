@@ -216,14 +216,14 @@ your numbers mean.
 
 ## One last gloriously ironic layer of nonsense
 
-I find this last piece painfully amusing. You'll recall from earlier in the
-article, story points were introduced to do what? To avoid focus on deviations
-between work estimates and actual time spent.
+This last piece is painfully amusing. You'll recall from earlier in the article,
+story points were introduced to do what? To avoid focus on deviations between
+work estimates and actual time spent.
 
 And what have we done?
 
 **Under the name of Velocity, we've memorialized and spotlighted this very
-thing as a core metric.** But we couldn't just stop there, could we? Oh no. 
+thing as a core metric.** But we couldn't just stop there, could we? Oh no.
 We've also managed to make it far more confusing along the way.
 
-&#128079; Bravo! Bravo. &#128079;
+Bravo! Bravo. &#128079;
