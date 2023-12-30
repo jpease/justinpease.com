@@ -71,7 +71,8 @@ With what result? This misunderstanding exaggerated disparities between
 estimated time and actual time, prompting stakeholders to focus on that. It's
 not hard to imagine that Mr. Jeffries and team found this to be an unhelpful
 distraction that did not contribute to the performance of an engineering team.
-And thus, points.
+And thus, points. \[*Thank you to [Ron Jeffries](https://ronjeffries.com) for
+taking the time to review the above 2 paragraphs for accuracy.*\]
 
 As time has passed, this verbal sleight of hand has grown increasingly complex.
 One team may adopt the Fibonacci sequence. Another, in an attempt to emphasize
