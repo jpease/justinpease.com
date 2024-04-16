@@ -11,14 +11,9 @@ published: true
 
 Are trees green? Is the sky blue? Yes, of course. Everyone knows that.
 
-However, looking out my window, what do I see? Trees that are red and orange
-along with a sky that is gray.
+However, looking out my window, what do I see? Trees that are red and orange along with a sky that is gray.
 
-To make sense of the information around us we must assess context. My writing
-is no different. I'll do my best to be honest and present information that I
-hope will be of use to others. However, the reader must critically evaluate the
-information. Part of that is considering the perspective that I'm viewing things
-from.
+To make sense of the information around us we must assess context. My writing is no different. I'll do my best to be honest and present information that I hope will be of use to others. However, the reader must critically evaluate the information. Part of that is considering the perspective that I'm viewing things from.
 
 Here are a few details that color my perception.
 

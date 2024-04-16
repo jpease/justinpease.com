@@ -13,10 +13,9 @@ published: true
 
 # You will be asked to do the impossible.
 
-**&#9888; Proceed with caution. &#9888;**
+**⚠ Proceed with caution. ⚠**
 
-Saying "Yes" to everything is a great way to let others down while *also*
-burning yourself out. &#128077;
+Saying "Yes" to everything is a great way to let others down while *also* burning yourself out. 👍
 
 On the other hand, simply saying "No" a lot doesn't solve your problems either.
 It may make more. At one company early in my management career, my Director

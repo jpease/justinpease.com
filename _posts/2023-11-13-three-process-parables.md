@@ -11,12 +11,9 @@ published: true
 
 How do the following words make you feel?
 
-"Management has decided that we need to introduce additional process to keep up
-with the operational demands of our growing business."
+"Management has decided that we need to introduce additional process to keep up with the operational demands of our growing business."
 
-Setting aside the whole "management has decided" part, let's talk about process.
-Depending upon your experiences, you may have some immediate--and possibly
-strong--reactions to the mention of adding process. I get it.
+Setting aside the whole "management has decided" part, let's talk about process. Depending upon your experiences, you may have some immediate--and possibly strong--reactions to the mention of adding process. I get it.
 
 However, I think most of us would agree that categorically labeling process as
 "good" or "bad" is an unhelpful oversimplification. Instead, we can think of

@@ -13,8 +13,7 @@ published: true
 
 **This post is part of [The Words We Use](/2022/12/18/the-words-we-use) series.**
 
-Sprint is commonly used in software engineering to describe a period of planned
-work, and frankly, it annoys me a bit. Let me explain.
+Sprint is commonly used in software engineering to describe a period of planned work, and frankly, it annoys me a bit. Let me explain.
 
 I live in beautiful Boise, ID surrounded by hundreds of miles of [foothill
 trails](https://boisetrails.com), like the one pictured above. When I venture

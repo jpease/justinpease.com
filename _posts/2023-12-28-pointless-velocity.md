@@ -11,10 +11,7 @@ author:
 published: true
 ---
 
-Languages are dynamic. They grow and change shape. Existing words are repurposed
-to describe new ideas. Sometimes it's helpful. Often it's harmless. But in some
-cases, like today's example, it results in **layers of absolute and utter
-nonsense that compound gloriously**.
+Languages are dynamic. They grow and change shape. Existing words are repurposed to describe new ideas. Sometimes it's helpful. Often it's harmless. But in some cases, like today's example, it results in **layers of absolute and utter nonsense that compound gloriously**.
 
 ## What is velocity?
 

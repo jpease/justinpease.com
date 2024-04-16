@@ -11,10 +11,9 @@ author:
 published: true
 ---
 
-If you're going to make an assumption, **assume that additional clarification is
-needed**.
+If you're going to make an assumption, **assume that additional clarification is needed**.
 
-Have ever had an experience like this? 
+Have ever had an experience like this?
 
 > You ask a question.
 >

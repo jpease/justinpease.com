@@ -11,9 +11,7 @@ author:
 published: true
 ---
 
-Sometimes 1on1s will need to be rescheduled. I'm sure you can relate to having
-multiple things competing for our time and attention that don't always neatly
-fit into calendared time slots.That's a reality of being a manager.
+Sometimes 1on1s will need to be rescheduled. I'm sure you can relate to having multiple things competing for our time and attention that don't always neatly fit into calendared time slots.That's a reality of being a manager.
 
 When needing to reschedule a 1on1, I find it helpful to ask "Why?"
 
