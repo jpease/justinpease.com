@@ -4,6 +4,7 @@ layout: post
 post-image: /assets/images/buried-in-debt-1.jpeg
 tags:
 - engineering management
+- technical debt
 author:
 - Justin Pease
 published: true
