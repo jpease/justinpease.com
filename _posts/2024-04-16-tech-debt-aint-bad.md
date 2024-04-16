@@ -77,4 +77,4 @@ Allocate time and capacity to do the work.
 ## What do you think?
 
 I’d love to hear your thoughts. Please feel free to comment on the related
-[LinkedIn post]().
+[LinkedIn post](https://www.linkedin.com/posts/justinapease_tech-debt-aint-bad-activity-7186123219697893377-GKiY).
