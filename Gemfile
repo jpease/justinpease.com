@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://gem.coop"
 # Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
