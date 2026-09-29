@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set page_title = "Blog" %}
+{% block main %}
+<section class="container blog">
+  <div class="blog-heading">
+    <p class="tagline">{{ site.tagline }}</p>
+    {# Hidden until search.js loads, so no-JS visitors never see a dead box. #}
+    <form class="search" role="search" action="/blog" hidden>
+      <label class="visually-hidden" for="search-input">Search posts</label>
+      <input id="search-input" name="q" type="search" placeholder="Search" autocomplete="off" spellcheck="false">
+    </form>
+  </div>
+  <p class="search-status" role="status" aria-live="polite"></p>
+
+  <ol class="post-list">
+    {% for post in posts %}
+    <li class="post-card" data-url="{{ post.url }}">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}" alt="" loading="{{ 'eager' if loop.index <= 2 else 'lazy' }}">
+        <div class="post-card-body">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.excerpt }}</p>
+          <p class="meta">
+            Published on <time datetime="{{ post.date.isoformat() }}">{{ post.date | longdate }}</time>
+            &middot; {{ post.minutes }} min read
+          </p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ asset('/assets/js/search.js') }}" defer></script>
+{% endblock %}

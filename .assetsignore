@@ -1,0 +1,18 @@
+# Cloudflare deploys the repo root as static assets with no build step.
+# Exclude sources and tooling that aren't part of the public site. Same
+# syntax as .gitignore.
+
+# Build inputs (rendered into the root by `just build`)
+content/
+templates/
+scripts/
+
+# Repo/editor metadata
+.git/
+.wrangler/
+wrangler.jsonc
+.gitignore
+.assetsignore
+.DS_Store
+justfile
+README.md

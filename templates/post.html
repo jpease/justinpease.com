@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% set page_title = post.title %}
+{% set page_description = post.summary %}
+{% set page_image = post.image %}
+{% set og_type = "article" %}
+{% block head_extra %}
+  <meta property="article:published_time" content="{{ post.date.isoformat() }}">
+  {% for tag in post.tags %}
+  <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.summary,
+    "image": post.image | absolute,
+    "datePublished": post.date.isoformat(),
+    "url": post.url | absolute,
+    "keywords": post.tags,
+    "author": {"@type": "Person", "name": site.author.name, "url": site.url},
+  } | tojson }}</script>
+{% endblock %}
+{% block main %}
+<article class="container post">
+  <header class="post-header">
+    <img class="post-image" src="{{ post.image }}" alt="">
+    <div>
+      <h1>{{ post.title }}</h1>
+      {% if post.description %}
+      <p class="post-description">{{ post.description }}</p>
+      {% endif %}
+      <p class="meta">
+        Published on <time datetime="{{ post.date.isoformat() }}">{{ post.date | longdate }}</time>
+        &middot; {{ post.minutes }} min read
+      </p>
+      {% if post.tags %}
+      <ul class="tags" aria-label="Tags">
+        {% for tag in post.tags %}
+        <li><a href="/blog?q={{ tag | urlencode }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </header>
+  <div class="prose">
+    {{ post.html | safe }}
+  </div>
+</article>
+{% endblock %}

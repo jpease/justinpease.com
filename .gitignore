@@ -1,6 +1,13 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
 .DS_Store
+
+# wrangler dev local state (`just preview`)
+.wrangler/
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc
+
+# Local-machine symlink into a sibling repo (~/Developer/github/jpease/scripts);
+# committing it would break Cloudflare asset validation, which rejects links
+# it can't resolve in its own clone.
+/scripts/check_site.py

@@ -1,0 +1,99 @@
+{#
+  Shared layout. Child templates set:
+    page_title        -- <title>/og:title (site title is appended)
+    page_description  -- meta/og description (defaults to site.description)
+    page_image        -- og:image path (optional)
+    og_type           -- "website" (default) or "article"
+  and fill `head_extra`, `main`, `scripts` blocks. `path` (the page's
+  extensionless URL) comes from build.py.
+#}
+{% set title = (page_title ~ " | " ~ site.title) if page_title is defined else site.title %}
+{% set description = page_description if page_description is defined else site.description %}
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  {% if path != "/404" %}
+  <link rel="canonical" href="{{ path | absolute }}">
+  {% endif %}
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+  <link rel="icon" href="{{ site.author.image }}">
+
+  <meta property="og:type" content="{{ og_type | default('website') }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ path | absolute }}">
+  {% if page_image is defined %}
+  <meta property="og:image" content="{{ page_image | absolute }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
+  <meta name="twitter:card" content="summary">
+  {% endif %}
+  <meta name="twitter:site" content="@{{ site.social.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
+
+  <link rel="preload" href="/styles/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ asset('/styles/main.css') }}">
+  {% block head_extra %}{% endblock %}
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="nav-brand" href="/">{{ site.title }}</a>
+      <ul class="nav-links">
+        {% for item in site.nav %}
+        <li><a href="{{ item.href }}"{% if path == item.href %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-author">
+        <img src="{{ site.author.image }}" alt="" width="64" height="64" loading="lazy">
+        <div>
+          <p class="footer-heading"><a href="/">{{ site.author.name }}</a></p>
+          <p>{{ site.author.about }}</p>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Get in touch</p>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/{{ site.social.github }}" rel="me noopener">GitHub</a></li>
+          <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me noopener">Twitter</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Stay connected</p>
+        <ul class="footer-links">
+          <li><a href="/feed.xml">Subscribe via RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="credits">Copyright &copy; {{ copyright_years }} {{ site.author.name }}. All rights reserved.</p>
+  </footer>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

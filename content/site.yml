@@ -1,0 +1,29 @@
+# Site-wide settings read by scripts/build.py and exposed to templates as `site`.
+title: Justin Pease
+description: Sometimes I write stuff.
+tagline: Simple ideas. Sometimes obvious. Often overlooked.
+url: https://justinpease.com
+language: en
+email: justin@justinpease.com
+
+author:
+  name: Justin Pease
+  about: People-first leadership
+  image: /assets/images/selfie.jpeg
+
+social:
+  twitter: jpease
+  linkedin: justinapease
+  github: jpease
+
+# Leave empty to omit the Google Analytics tag.
+google_analytics: G-HMKCNEPC19
+
+# Header navigation, in order.
+nav:
+  - label: Blog
+    href: /blog
+  - label: Warning
+    href: /2023/10/11/reader-beware-context-matters
+  - label: Projects
+    href: /projects

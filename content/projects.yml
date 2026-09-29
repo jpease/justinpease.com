@@ -1,0 +1,10 @@
+# Cards on /projects, rendered in this order.
+- name: Timogin
+  image: /assets/images/clouds-1.jpeg
+  link: https://timogin.com
+  description: A collection of humane approaches to people management
+
+- name: Hubris
+  image: /assets/images/hubris-v1-dactyl-manuform-4x6-kle.png
+  link: https://github.com/jpease/hubris/
+  description: The best keyboard layout? Give it a try and let me know.

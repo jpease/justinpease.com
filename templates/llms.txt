@@ -1,0 +1,16 @@
+# {{ site.title }}
+
+> {{ site.author.about }}. {{ site.tagline }}
+
+Personal blog of {{ site.author.name }}: short essays on engineering management, process, and people-first leadership.
+
+## Posts
+
+{% for post in posts %}
+- [{{ post.title }}]({{ post.url | absolute }}): {{ post.summary }}
+{% endfor %}
+
+## Other
+
+- [Projects]({{ "/projects" | absolute }})
+- [Atom feed]({{ "/feed.xml" | absolute }})

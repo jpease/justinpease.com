@@ -1,0 +1,23 @@
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Pages link these with a ?v=<content hash> token (scripts/build.py asset()),
+# so a short max-age only matters for direct, untokenized requests.
+/styles/main.css
+  Cache-Control: public, max-age=300
+
+/assets/js/*
+  Cache-Control: public, max-age=300
+
+# Font and image filenames are stable and their contents do not change in
+# place. Not marked immutable, so replacing one still propagates within the
+# week.
+/styles/fonts/*
+  Cache-Control: public, max-age=604800
+
+/assets/images/*
+  Cache-Control: public, max-age=604800

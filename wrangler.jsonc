@@ -1,0 +1,15 @@
+// Static-assets-only Worker: serves the repo root as-is (no build step;
+// `just build` output is committed). Files listed in .assetsignore are
+// not uploaded.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "justinpease-com",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": ".",
+    // /foo serves foo.html; /foo.html redirects to /foo. Keeps the old
+    // Jekyll URLs working without a _redirects file.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% set page_title = "404" %}
+{% block head_extra %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+{% block main %}
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">404</h1>
+    <p class="hero-text">The page you're trying to load was not found</p>
+    <hr>
+    <a class="button button-light" href="/">Home</a>
+    <a class="button button-light" href="/blog">Blog</a>
+  </div>
+</section>
+{% endblock %}
