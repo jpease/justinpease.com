@@ -1,0 +1,6 @@
+# The blog listing moved from /blog to the home page (query strings such as
+# ?q= are preserved). /blog.html is listed too: with no blog.html asset,
+# Cloudflare won't normalize it to /blog first.
+/blog       /  301
+/blog/      /  301
+/blog.html  /  301

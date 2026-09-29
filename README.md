@@ -11,7 +11,7 @@ build step at deploy time).
 - `templates/` — Jinja templates for every generated page and feed
 - `styles/`, `assets/` — hand-maintained CSS, fonts, images, and search JS
 - `scripts/build.py` — renders the above into the repo root
-  (`index.html`, `blog.html`, `projects.html`, `404.html`,
+  (`index.html` — the blog listing, `projects.html`, `404.html`,
   `YYYY/MM/DD/slug.html`, `feed.xml`, `sitemap.xml`, `search.json`,
   `llms.txt`). Generated files are committed; edit the sources, not them.
 

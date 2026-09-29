@@ -188,8 +188,7 @@ def render_site() -> dict[str, str]:
         return env.get_template(template).render(**ctx)
 
     out = {
-        "index.html": page("home.html", path="/"),
-        "blog.html": page("blog.html", path="/blog", posts=posts),
+        "index.html": page("blog.html", path="/", posts=posts),
         "projects.html": page("projects.html", path="/projects", projects=projects),
         "404.html": page("404.html", path="/404"),
         "feed.xml": page("feed.xml", posts=posts, updated=latest),

@@ -1,4 +1,4 @@
-// Client-side post search for /blog.
+// Client-side post search for the home page (the blog listing).
 //
 // The blog page already lists every post, so search filters and reorders
 // those cards in place rather than rendering its own results. The index

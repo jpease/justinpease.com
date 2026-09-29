@@ -1,11 +1,10 @@
 {% extends "base.html" %}
-{% set page_title = "Blog" %}
 {% block main %}
 <section class="container blog">
   <div class="blog-heading">
     <p class="tagline">{{ site.tagline }}</p>
     {# Hidden until search.js loads, so no-JS visitors never see a dead box. #}
-    <form class="search" role="search" action="/blog" hidden>
+    <form class="search" role="search" action="/" hidden>
       <label class="visually-hidden" for="search-input">Search posts</label>
       <input id="search-input" name="q" type="search" placeholder="Search" autocomplete="off" spellcheck="false">
     </form>
