@@ -1,10 +1,15 @@
 # Cards on /projects, rendered in this order.
-- name: Handbook
-  image: /assets/images/clouds-1.jpeg
-  link: /handbook/
-  description: A collection of humane approaches to people management
-
 - name: Hubris
   image: /assets/images/hubris-v1-dactyl-manuform-4x6-kle.png
   link: https://github.com/jpease/hubris/
   description: The best keyboard layout? Give it a try and let me know.
+
+- name: GPY
+  image: /assets/images/gpy-demo.jpeg
+  link: https://github.com/jpease/gpy
+  description: A fast Git- and language-aware prompt for Fish, Zsh and Bash.
+
+- name: hex-outdated.nvim
+  image: /assets/images/hex-outdated-demo.jpeg
+  link: https://github.com/jpease/hex-outdated.nvim
+  description: Inline Hex dependency status for your Elixir mix.exs, right in Neovim.
