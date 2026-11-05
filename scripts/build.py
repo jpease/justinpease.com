@@ -36,6 +36,7 @@ from pathlib import Path
 import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
+from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
@@ -297,7 +298,7 @@ def render_site() -> dict[str, str]:
     env.globals.update(
         site=site,
         asset=asset_url,
-        copyright_years=f"{first.year}–{latest.year}" if first.year != latest.year else str(latest.year),
+        copyright_years=Markup(f"{first.year}–<span data-current-year>{latest.year}</span>"),
     )
 
     def page(template: str, **ctx) -> str:
