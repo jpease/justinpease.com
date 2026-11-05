@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% set page_title = doc.title %}
+{% if doc.summary %}
+{% set page_description = doc.summary %}
+{% endif %}
+{% macro outline(pages) %}
+<ul>
+  {% for p in pages %}
+  <li>
+    <a href="{{ p.url }}">{{ p.title }}</a>
+    {% if p.children %}{{ outline(p.children) }}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+{% block main %}
+<article class="container post handbook">
+  {% if doc.parent %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      {% for a in doc.ancestors %}
+      <li><a href="{{ a.url }}">{{ a.title }}</a></li>
+      {% endfor %}
+      <li aria-current="page">{{ doc.title }}</li>
+    </ol>
+  </nav>
+  {% endif %}
+  <h1>{{ doc.title }}</h1>
+  <div class="prose">
+    {{ doc.html | safe }}
+  </div>
+  {% if doc.children %}
+  <nav class="handbook-outline" aria-label="In this section">
+    {{ outline(doc.children) }}
+  </nav>
+  {% endif %}
+  {% if prev_doc or next_doc %}
+  <nav class="handbook-pager" aria-label="Handbook pagination">
+    {% if prev_doc %}
+    <a class="prev" rel="prev" href="{{ prev_doc.url }}"><span>Previous</span>{{ prev_doc.title }}</a>
+    {% endif %}
+    {% if next_doc %}
+    <a class="next" rel="next" href="{{ next_doc.url }}"><span>Next</span>{{ next_doc.title }}</a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</article>
+{% endblock %}
+{% block credits %}Copyright &copy; {{ copyright_years }} {{ site.author.name }} and <a href="/handbook/license">contributors</a>. The handbook is released under the MIT License.{% endblock %}

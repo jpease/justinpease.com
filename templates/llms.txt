@@ -2,12 +2,18 @@
 
 > {{ site.author.about }}. {{ site.tagline }}
 
-Personal blog of {{ site.author.name }}: short essays on engineering management, process, and people-first leadership.
+Personal blog of {{ site.author.name }}: short essays on engineering management, process, and people-first leadership. Also hosts the Handbook: humane approaches to common people-management concerns.
 
 ## Posts
 
 {% for post in posts %}
 - [{{ post.title }}]({{ post.url | absolute }}): {{ post.summary }}
+{% endfor %}
+
+## Handbook
+
+{% for doc in handbook %}
+- [{{ doc.title }}]({{ doc.url | absolute }}){% if doc.summary %}: {{ doc.summary }}{% endif %}
 {% endfor %}
 
 ## Other

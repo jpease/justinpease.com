@@ -23,6 +23,8 @@ google_analytics: G-HMKCNEPC19
 nav:
   - label: Blog
     href: /
+  - label: Handbook
+    href: /handbook/
   - label: Warning
     href: /2023/10/11/reader-beware-context-matters
   - label: Projects

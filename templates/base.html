@@ -58,7 +58,7 @@
       <a class="nav-brand" href="/">{{ site.title }}</a>
       <ul class="nav-links">
         {% for item in site.nav %}
-        <li><a href="{{ item.href }}"{% if path == item.href %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        <li><a href="{{ item.href }}"{% if path == item.href or (item.href != "/" and path.startswith(item.href)) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -92,7 +92,7 @@
         </ul>
       </div>
     </div>
-    <p class="credits">Copyright &copy; {{ copyright_years }} {{ site.author.name }}. All rights reserved.</p>
+    <p class="credits">{% block credits %}Copyright &copy; {{ copyright_years }} {{ site.author.name }}. All rights reserved.{% endblock %}</p>
   </footer>
   {% block scripts %}{% endblock %}
 </body>

@@ -30,7 +30,7 @@ import json
 import re
 import shutil
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import markdown
@@ -43,10 +43,11 @@ TEMPLATES = ROOT / "templates"
 
 POST_FILENAME = re.compile(r"^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$")
 FRONT_MATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.DOTALL)
-# Top-level output directories owned entirely by the build (one per post
-# year); they are wiped and rewritten so deleted/renamed posts leave nothing
-# behind.
+# Top-level output directories owned entirely by the build: one per post year
+# plus handbook/. They are wiped and rewritten so deleted/renamed content
+# leaves nothing behind.
 YEAR_DIR = re.compile(r"^\d{4}$")
+HANDBOOK_DIR = "handbook"
 
 WORDS_PER_MINUTE = 180
 EXCERPT_CHARS = 300
@@ -87,6 +88,49 @@ class Post:
         return max(1, len(self.text.split()) // WORDS_PER_MINUTE)
 
 
+@dataclass(eq=False)
+class Page:
+    """An undated handbook page. Pages form a tree; URLs are independent of it."""
+
+    source: Path
+    slug: str  # path under content/handbook, no extension; "" for the root; an index.md takes its directory's path
+    is_index: bool
+    title: str
+    order: int
+    parent_slug: str | None
+    html: str
+    text: str
+    parent: Page | None = None
+    children: list[Page] = field(default_factory=list)
+
+    @property
+    def url(self) -> str:
+        """Site-relative canonical URL: section indexes end in "/", leaf pages do not."""
+        if self.is_index:
+            return f"/{HANDBOOK_DIR}/{self.slug}/" if self.slug else f"/{HANDBOOK_DIR}/"
+        return f"/{HANDBOOK_DIR}/{self.slug}"
+
+    @property
+    def output(self) -> str:
+        if self.is_index:
+            return f"{HANDBOOK_DIR}/{self.slug}/index.html" if self.slug else f"{HANDBOOK_DIR}/index.html"
+        return f"{HANDBOOK_DIR}/{self.slug}.html"
+
+    @property
+    def summary(self) -> str:
+        return truncate(self.text, EXCERPT_CHARS)
+
+    @property
+    def ancestors(self) -> list[Page]:
+        """Root first, excluding self."""
+        chain = []
+        node = self.parent
+        while node:
+            chain.append(node)
+            node = node.parent
+        return chain[::-1]
+
+
 def truncate(text: str, limit: int) -> str:
     if len(text) <= limit:
         return text
@@ -107,15 +151,7 @@ def load_yaml(path: Path):
 
 
 def load_posts() -> list[Post]:
-    # Posts were written for Jekyll's kramdown; "extra" + "smarty" + "toc"
-    # cover the features they use (tables, footnotes, typographic quotes,
-    # heading ids).
-    md = markdown.Markdown(
-        extensions=["extra", "smarty", "toc", "sane_lists"],
-        output_format="html",
-    )
-    # kramdown treats \< as an escape; Python-Markdown doesn't by default.
-    md.ESCAPED_CHARS.append("<")
+    md = new_markdown()
     posts = []
     for path in sorted((CONTENT / "posts").glob("*.md")):
         name = POST_FILENAME.match(path.name)
@@ -150,6 +186,85 @@ def load_posts() -> list[Post]:
     return posts
 
 
+def new_markdown() -> markdown.Markdown:
+    # Content was written for Jekyll's kramdown; "extra" + "smarty" + "toc"
+    # cover the features it uses (tables, footnotes, typographic quotes,
+    # heading ids), and "admonition" renders the handbook's callouts
+    # (`!!! tip`).
+    md = markdown.Markdown(
+        extensions=["extra", "smarty", "toc", "sane_lists", "admonition"],
+        output_format="html",
+    )
+    # kramdown treats \< as an escape; Python-Markdown doesn't by default.
+    md.ESCAPED_CHARS.append("<")
+    return md
+
+
+def load_handbook() -> list[Page]:
+    """Parse content/handbook/**/*.md into a tree; return pages in reading
+    (depth-first, `order` then title) order, root first.
+
+    A page's parent is its directory's index.md (the root index.md for
+    top-level files) unless front matter sets `parent: <slug>`; that lets a
+    page nest under a sibling without changing its URL."""
+    md = new_markdown()
+    base = CONTENT / HANDBOOK_DIR
+    pages: dict[str, Page] = {}
+    for path in sorted(base.rglob("*.md")):
+        rel = path.relative_to(base).with_suffix("")
+        is_index = rel.name == "index"
+        slug = "/".join(rel.parent.parts if is_index else rel.parts)
+        where = path.relative_to(ROOT)
+        raw = path.read_text(encoding="utf-8")
+        fm = FRONT_MATTER.match(raw)
+        if not fm:
+            sys.exit(f"{where}: missing --- front matter ---")
+        meta = yaml.safe_load(fm.group(1)) or {}
+        if not meta.get("title"):
+            sys.exit(f"{where}: front matter needs `title`")
+        if not isinstance(meta.get("order"), int):
+            sys.exit(f"{where}: front matter needs integer `order`")
+        if slug in pages:
+            sys.exit(f"{where}: slug {slug!r} collides with {pages[slug].source.relative_to(ROOT)}")
+        default_parent = None if not slug else slug.rsplit("/", 1)[0] if "/" in slug else ""
+        body = md.reset().convert(raw[fm.end() :])
+        pages[slug] = Page(
+            source=path,
+            slug=slug,
+            is_index=is_index,
+            title=str(meta["title"]).strip(),
+            order=meta["order"],
+            parent_slug=str(meta["parent"]) if "parent" in meta else default_parent,
+            html=body,
+            text=plain_text(body),
+        )
+    if "" not in pages:
+        sys.exit("content/handbook/index.md is required (the handbook root)")
+    for p in pages.values():
+        if p.parent_slug is None:
+            continue
+        parent = pages.get(p.parent_slug)
+        if parent is None:
+            sys.exit(f"{p.source.relative_to(ROOT)}: parent {p.parent_slug!r} does not exist")
+        p.parent = parent
+        parent.children.append(p)
+    for p in pages.values():
+        p.children.sort(key=lambda c: (c.order, c.title))
+
+    ordered: list[Page] = []
+
+    def walk(p: Page) -> None:
+        ordered.append(p)
+        for c in p.children:
+            walk(c)
+
+    walk(pages[""])
+    lost = sorted(p.source.relative_to(ROOT).as_posix() for p in pages.values() if p not in ordered)
+    if lost:
+        sys.exit(f"handbook pages unreachable from the root (parent cycle?): {', '.join(lost)}")
+    return ordered
+
+
 def asset_url(path: str) -> str:
     """Cache-busting URL: /styles/main.css -> /styles/main.css?v=<hash>.
     _headers gives CSS/JS a short max-age; the token makes changes land
@@ -164,6 +279,7 @@ def render_site() -> dict[str, str]:
     posts = load_posts()
     if not posts:
         sys.exit("no published posts in content/posts/")
+    handbook = load_handbook()
 
     env = Environment(
         loader=FileSystemLoader(TEMPLATES),
@@ -192,11 +308,19 @@ def render_site() -> dict[str, str]:
         "projects.html": page("projects.html", path="/projects", projects=projects),
         "404.html": page("404.html", path="/404"),
         "feed.xml": page("feed.xml", posts=posts, updated=latest),
-        "sitemap.xml": page("sitemap.xml", posts=posts, latest=latest),
-        "llms.txt": page("llms.txt", posts=posts),
+        "sitemap.xml": page("sitemap.xml", posts=posts, handbook=handbook, latest=latest),
+        "llms.txt": page("llms.txt", posts=posts, handbook=handbook),
     }
     for post in posts:
         out[post.output] = page("post.html", path=post.url, post=post)
+    for i, doc in enumerate(handbook):
+        out[doc.output] = page(
+            "handbook.html",
+            path=doc.url,
+            doc=doc,
+            prev_doc=handbook[i - 1] if i else None,
+            next_doc=handbook[i + 1] if i + 1 < len(handbook) else None,
+        )
 
     out["search.json"] = (
         json.dumps(
@@ -218,11 +342,15 @@ def render_site() -> dict[str, str]:
     return out
 
 
+def is_owned_dir(d: Path) -> bool:
+    return d.is_dir() and (YEAR_DIR.match(d.name) is not None or d.name == HANDBOOK_DIR)
+
+
 def owned_files() -> set[str]:
-    """Files currently on disk under build-owned year directories."""
+    """Files currently on disk under build-owned directories."""
     found = set()
     for d in ROOT.iterdir():
-        if d.is_dir() and YEAR_DIR.match(d.name):
+        if is_owned_dir(d):
             found.update(str(p.relative_to(ROOT)) for p in d.rglob("*") if p.is_file())
     return found
 
@@ -247,7 +375,7 @@ def check(out: dict[str, str]) -> int:
 
 def write(out: dict[str, str]) -> None:
     for d in ROOT.iterdir():
-        if d.is_dir() and YEAR_DIR.match(d.name):
+        if is_owned_dir(d):
             shutil.rmtree(d)
     for rel, content in out.items():
         target = ROOT / rel

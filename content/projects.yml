@@ -1,7 +1,7 @@
 # Cards on /projects, rendered in this order.
-- name: Timogin
+- name: Handbook
   image: /assets/images/clouds-1.jpeg
-  link: https://timogin.com
+  link: /handbook/
   description: A collection of humane approaches to people management
 
 - name: Hubris

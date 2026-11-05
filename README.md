@@ -8,13 +8,23 @@ deploys; other branches get preview URLs.
 
 - `content/posts/YYYY-MM-DD-slug.md` — posts (Markdown with YAML front matter:
   `title`, `post-image`, optional `description`, `tags`, `published: false`)
+- `content/handbook/**/*.md` — the handbook: undated pages (front matter:
+  `title`, integer `order`, optional `parent`). A page nests under its
+  directory's `index.md` unless `parent: <slug>` names another page (slug =
+  path under `content/handbook/`, no extension; e.g. `in/interviewing`).
+  `foo/index.md` serves `/handbook/foo/`; any other `foo.md` serves
+  `/handbook/foo`. Callouts use `!!! tip` / `!!! note "Title"` /
+  `!!! caution` / `!!! important` with the body indented four spaces, and
+  nested lists need four-space indents. Content is MIT-licensed
+  (`content/handbook/license.md`); the rest of the site is not.
 - `content/site.yml`, `content/projects.yml` — site settings, nav, projects
 - `templates/` — Jinja templates for every generated page and feed
 - `styles/`, `assets/` — hand-maintained CSS, fonts, images, and search JS
 - `scripts/build.py` — renders the above into the repo root
   (`index.html` — the blog listing, `projects.html`, `404.html`,
-  `YYYY/MM/DD/slug.html`, `feed.xml`, `sitemap.xml`, `search.json`,
-  `llms.txt`). Generated files are committed; edit the sources, not them.
+  `YYYY/MM/DD/slug.html`, `handbook/**.html`, `feed.xml`, `sitemap.xml`,
+  `search.json`, `llms.txt`). Generated files are committed; edit the
+  sources, not them.
 - `wrangler.jsonc` — Worker config: serve the repo root, `/foo` → `foo.html`,
   `404.html` for misses. `.assetsignore` keeps sources/tooling unpublished.
 - `_headers`, `_redirects` — Cloudflare response headers and redirects
